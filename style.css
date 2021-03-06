@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    background-color: red;
+    margin: 0px;
+    padding: 0px;
+    
+    
+}
+table{
+
+    background-color: teal;
+}
+tr{
+    border-color: white;
+    border: 29px solid blue;
+}
+button{margin-top:20px;}
