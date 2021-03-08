@@ -1,17 +1,23 @@
 *{
     box-sizing: border-box;
-    background-color: grey;
+    
     margin: 0px;
     padding: 0px;
     
     
 }
 table{
+    background-color: yellow;
 
-    background-color: teal;
+}
+th{
+    background-color: orange;
 }
 tr{
-    border-color: white;
+    background-color: grey;
     border: 29px solid blue;
 }
-button{margin-top:20px;}
+button{margin-top:20px;
+    
+}
+
