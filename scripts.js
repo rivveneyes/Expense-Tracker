@@ -1,27 +1,42 @@
-const spentAmount=document.getElementById("cash-value")
+const spentAmount=document.getElementById("cash-value");
 const date = document.getElementById("date");
 const button= document.querySelector("button");
 const tbody= document.querySelector("tbody");
 const selectOption=document.querySelector("select");
+const itemDescription=document.querySelector(".description");
 
 
 
+// // /test one
+// let phrase="the Quick 1b2r3o4w5n6 quick fox jumped over the cow";
+// let reg = /[a-t*]/gi;
 
-let data1= 123;
-let data2 = "this is words";
+// let results =reg.test(phrase)
+// let reSults = phrase.match(reg);
+// console.log(results);
+// console.log(reSults);
 
 
+// let secondReg= /[2-4]/g;
+// let resUlts = phrase.match(secondReg);
+// console.log(resUlts);
+// // test two
+
+
+const data2= "DUMMY NUMBER"
 button.addEventListener("click", e=>{
-     let  spentString= spentAmount;
+     let  spentString= spentAmount.value;
      let dateInput=dateFixer(date.value);
      let typeSpent=selectOption.value;
-     let newRow =tableBuilder(dateInput,typeSpent,data2,"this");
+     let spentDetails= itemDescription.value;
+     let newRow =tableBuilder(dateInput,typeSpent,data2,spentDetails);
+
      tbody.appendChild(newRow);
+     console.log(spentString)
 
-     console.log(spentString.value)
+     //+++=======+++
 
-
-
+    
 })
 
 
