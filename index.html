@@ -7,21 +7,22 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-    <h1>Track Your Expenses</h1>
+    <h1 class='header'>Track Your Expenses</h1>
+    <div class="input-field">
     <input id="date"type="date">
-<br>
-    <lable for="cash-value">enter amount spen</lable>
-    <input type="number" id="cash-value">
 
-    <label for="pay-options"></label>
-    <select id ="pay-options">
-        <option value=""></option>
+    <select id ="pay-options" placeholder="pay">
+
+        <option value="" disabled selected hidden>Pay Type</option>
         <option value="cash">CASH</option>
         <option value="debit">DEBIT</option>
         <option value="credit">CREDIT</option>
         <option value="other">OTHER</option>
     </select>
-<input class="description"type="text">
+    <input  id="cash-value" placeholder="enter spent amount" type="number">    
+    <textarea class="item-description" placeholder="item description" ></textarea>
+</div>
+
     <table>
         <thread>
             <tr>
@@ -32,11 +33,30 @@
             </tr>
         </thread>
         <tbody class="display-input">
+            <tr>
+                <td>asdasd</td>
+                <td>2123123</td>
+                <td>sdfas</td>
+                <td>dummy data cant click asdf asdf asdf asdf asf </td>
+            </tr>
+            <tr>
+                <td>asdasd</td>
+                <td>2123123</td>
+                <td>sdfas</td>
+                <td>dummy data cant click asdf asdf asdf asdf asf </td>
+            </tr>
+            <tr>
+                <td>asdasd</td>
+                <td>2123123</td>
+                <td>sdfas</td>
+                <td>dummy data cant click asdf asdf asdf asdf asf </td>
+            </tr>
             
         </tbody>
     </table>
-    <button type="button">date former</button>
-    <button type="button">remove selected</button>
+    <button id="remove-button" type="button">remove expense</button>
+    <button id="add-button">add expense</button>
+    
 
 
 

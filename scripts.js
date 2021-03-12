@@ -1,13 +1,12 @@
-const spentAmount=document.getElementById("cash-value");
 const date = document.getElementById("date");
 const tbody= document.querySelector("tbody");
 const selectOption=document.querySelector("select");
-const itemDescription=document.querySelector(".description");
-const button= document.querySelector("button");
-const deleteButton=document.querySelectorAll("button")[1];
-
+const spentAmount=document.getElementById("cash-value");
+const itemDescription=document.querySelector(".item-description");
+const addButton= document.getElementById("add-button");
+const deleteButton=document.getElementById("remove-button");
 //==========EVENT LISTENERS=======
-button.addEventListener("click", ()=>{
+addButton.addEventListener("click", ()=>{
     const dateInput=dateFixer(date.value);
     const typeSpent=selectOption.value;
     const numberSpent=stringToNumber(spentAmount.value);
@@ -21,12 +20,9 @@ button.addEventListener("click", ()=>{
     tbody.appendChild(newRow);
     fieldClear()
 }})
-
-
 tbody.addEventListener("click", (e)=>{
     seletedColorChanger(e.target);
 })
-
 deleteButton.addEventListener("click",()=>{
      const trAll=document.querySelectorAll("tr");
      trAll.forEach(removeSelectedItems)
@@ -35,14 +31,12 @@ deleteButton.addEventListener("click",()=>{
 
 })
 //==========FUNCTIONS=============//
-
 function removeSelectedItems(item){
     item.style.backgroundColor
     if(item.style.backgroundColor ==="red"){
     tbody.removeChild(item);
     }
 }
-
 //fixed returned date from input filed from yyyy/mm/dd to mm/dd/yyyy
 function dateFixer(offDate){
    if (offDate==""){
@@ -52,7 +46,6 @@ function dateFixer(offDate){
     year+="-"+offDate.slice(0,4);
     return year
 }
-
 //build complete table once check have bee maid
 function tableBuilder(date,type,amount,desc){
 
@@ -65,14 +58,12 @@ function tableBuilder(date,type,amount,desc){
     return tableRow;
     
 }
-
 //convert user number input to string
 function stringToNumber(numString){
     let newNum=parseFloat(numString);
     newNum=newNum.toFixed(2);
     return newNum;
 }
-
 //checks every input field for empty fields 
 function inputChecker(dateInput,typeSpent,numberSpent,spentDetails){
 if(dateInput===undefined){
@@ -93,24 +84,20 @@ else if (spentDetails===""){
 }
 return true;
 }
-
 //clear all input field after data taken
 function fieldClear(){
     date.value="";
     selectOption.value="";
     spentAmount.value="";
     itemDescription.value="";}
-
-
  function seletedColorChanger(option){   
     if( option.tagName==="TD"){
-        console.log("hit");
             const selectRow=option.parentNode;
-            console.log(selectRow)
             if(selectRow.style.backgroundColor==="red"){
-                selectRow.style.backgroundColor="silver";
+                selectRow.style.backgroundColor="white";
+                
             }
             else{selectRow.style.backgroundColor="red"}
             }
         }
-        console.log(deleteButton)
+       

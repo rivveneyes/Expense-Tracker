@@ -1,23 +1,73 @@
 *{
     box-sizing: border-box;
-    
     margin: 0px;
-    padding: 0px;
-    
-    
+    padding: 0px;   
 }
-table{
-    background-color: yellow;
 
+.header{
+    color:rgb(77, 238, 77);
+    text-align: center;
+    background-color: rgb(27, 96, 117);
+    
 }
+.input-field{
+    margin: 5px;
+    margin-bottom:0px;
+    background-color: rgb(27, 96, 117);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#date{
+    display: block;
+    margin-left:10px;
+    
+    border-radius: 20px;
+    text-align: center;
+}
+#cash-value{
+    
+    border-radius:20px;
+    margin-left:10px;
+}
+
+select:invalid{
+    color: gray;
+}
+#pay-options{ 
+    border-radius: 20px;
+   display: block;
+   margin-left: 105px;
+}
+/*====== display table ===== */
+table{
+    
+    max-width: 98%;
+    min-width: 98%;
+    margin: auto;
+    padding-top: 5px;
+    background-color: rgb(27, 96, 117);
+}
+
 th{
-    background-color: orange;
+    color:rgb(49, 185, 49);
+    background-color: white;
 }
 tr{
-    background-color: grey;
-    border: 29px solid blue;
-}
-button{margin-top:20px;
     
+    max-height: 10px;
+    background-color: white;
 }
 
+button{
+    float: right;
+    margin-right: 10px;
+}
+
+.item-description{
+    display: block;
+    background-color: rgb(223, 215, 215);
+    margin-left: 10px;
+    min-height: 15px;
+    max-width: 55%;
+    max-height: 150px;
+}
