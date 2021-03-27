@@ -7,7 +7,7 @@ const addButton= document.getElementById("add-button");
 const deleteButton=document.getElementById("remove-button");
 //==========EVENT LISTENERS=======
 addButton.addEventListener("click", ()=>{
-    const dateInput=dateFixer(date.value);
+    const dateInput=date.value;
     const typeSpent=selectOption.value;
     const numberSpent=stringToNumber(spentAmount.value);
     const spentDetails=itemDescription.value;

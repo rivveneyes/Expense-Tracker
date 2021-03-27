@@ -9,6 +9,7 @@
     <body>
     <h1 class='header'>Track Your Expenses</h1>
     <div class="input-field">
+
     <input id="date"type="date">
 
     <select id ="pay-options" placeholder="pay">
@@ -22,6 +23,7 @@
     <input  id="cash-value" placeholder="enter spent amount" type="number">    
     <textarea class="item-description" placeholder="item description" ></textarea>
 </div>
+    <h2>Fill out all fields to submit a todo.To remove a item&#40s&#41 click on unwanted item,all items highlighted red will be removed once you click on "remove Expense" button </h2>
 
     <table>
         <thread>
@@ -29,12 +31,13 @@
                 <th>date</th>
                 <th>type</th>
                 <th>amount</th>
-                <th>on what</th>
+                <th>item details</th>
             </tr>
         </thread>
         <tbody class="display-input">            
         </tbody>
     </table>
+
     <button id="remove-button" type="button">remove expense</button>
     <button id="add-button">add expense</button>
   <script src="scripts.js"></script>
