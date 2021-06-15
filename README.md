@@ -6,4 +6,7 @@
 <p>This was great practice for taking user input and displaying it an organize table.
 The greatest challenge for me in this build was how manipluate the input I was receiving such as a date or a number input. </p>
 <h3>AUTHOR</h3>
-Joshua Garcia- full-stack Developer <a href="https://rivveneyes.github.io/">Website</a> |
+Joshua Garcia- <a href="https://joshua-personal-website.herokuapp.com/">My Site
+  </a>|<a href="https://www.linkedin.com/in/joshua-garica-04351520b/">Linkedin
+  </a>
+
